@@ -8,4 +8,8 @@ class Solver
       raise 'InvalidNumberError'
     end
   end
+
+  def reverse(word)
+    word.reverse
+  end
 end
