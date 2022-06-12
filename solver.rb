@@ -1,9 +1,9 @@
 class Solver
-  def factorial(integer)
-    if integer.zero?
+  def factorial(number)
+    if number.zero?
       1
-    elsif integer >= 0
-      integer * factorial(integer - 1)
+    elsif number >= 0
+      number * factorial(number - 1)
     else
       raise 'InvalidNumberError'
     end
