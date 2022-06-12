@@ -17,4 +17,15 @@ describe Solver do
       expect(Solver.new.reverse('yellow')).to eq 'wolley'
     end
   end
+  context 'fizzbuzz method' do
+    it 'returns fizz if divisible by 3' do
+      expect(Solver.new.fizzbuzz(9)).to eq 'fizz'
+    end
+    it 'returns buzz if divisible by 5' do
+      expect(Solver.new.fizzbuzz(20)).to eq 'buzz'
+    end
+    it 'returns fizzbuzz if divisible by 3 and 5' do
+      expect(Solver.new.fizzbuzz(15)).to eq 'fizzbuzz'
+    end
+  end
 end
