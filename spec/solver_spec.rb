@@ -1,4 +1,4 @@
-require('../solver')
+require_relative('../solver')
 
 describe Solver do
   context 'factorial method works correctly' do
@@ -9,7 +9,7 @@ describe Solver do
       expect(Solver.new.factorial(0)).to eq 1
     end
     it 'returns error if integer is negative' do
-      expect(Solver.new.factorial(-20)).to be 'Error: Negative input number'
+      expect { Solver.new.factorial(-20) }.to raise_error('InvalidNumberError')
     end
   end
 end
