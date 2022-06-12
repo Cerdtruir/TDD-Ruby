@@ -12,7 +12,7 @@ describe Solver do
       expect { Solver.new.factorial(-20) }.to raise_error('InvalidNumberError')
     end
   end
-  context 'reverse' do
+  context 'reverse word' do
     it 'reverses a word' do
       expect(Solver.new.reverse('yellow')).to eq 'wolley'
     end
